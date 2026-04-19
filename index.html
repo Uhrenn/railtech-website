@@ -3,173 +3,190 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Railtech AS — Verktøy & Teknologi for Jernbane</title>
+  <title>Railtech AS — Innovasjon. Presisjon. Fremdrift.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <!-- Grain overlay -->
-  <div class="grain"></div>
-
-  <!-- Rail track decorative line -->
-  <div class="rail-line left"></div>
-  <div class="rail-line right"></div>
-
   <!-- Navigation -->
   <nav class="nav">
-    <div class="nav-logo">
-      <span class="logo-mark">RT</span>
-      <span class="logo-text">RAILTECH</span>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-rail">RAILTECH</span><span class="logo-as"> AS</span>
+      </a>
+      <div class="nav-links">
+        <a href="#tjenester">Tjenester</a>
+        <a href="#om">Om Oss</a>
+        <a href="#teknologi">Teknologi</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <button class="nav-menu-btn" aria-label="Meny" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="nav-links">
-      <a href="#tjenester">Tjenester</a>
-      <a href="#om">Om Oss</a>
-      <a href="#teknologi">Teknologi</a>
-      <a href="#kontakt">Kontakt</a>
-    </div>
-    <button class="nav-menu-btn" aria-label="Meny" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-      <span></span><span></span><span></span>
-    </button>
   </nav>
 
   <!-- Hero -->
   <header class="hero">
-    <div class="hero-badge">ORG.NR 936 174 965</div>
-    <h1 class="hero-title">
-      <span class="line" data-delay="0">Presisjonverktøy</span>
-      <span class="line" data-delay="1">for jernbane</span>
-      <span class="line accent" data-delay="2">& infrastruktur</span>
-    </h1>
-    <p class="hero-sub">Vi utvikler, produserer og leverer spesialisert verktøy, måleutstyr og teknologiske løsninger for jernbane- og infrastrukturbransjen.</p>
-    <div class="hero-cta">
-      <a href="#kontakt" class="btn primary">Ta Kontakt</a>
-      <a href="#tjenester" class="btn ghost">Se Tjenester</a>
+    <div class="hero-bg">
+      <img src="/hero-bg.png" alt="Jernbane infrastruktur" />
+      <div class="hero-overlay"></div>
     </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">01</span>
-        <span class="stat-label">Design</span>
+    <div class="hero-content">
+      <div class="hero-tagline">Innovasjon · Presisjon · Fremdrift</div>
+      <h1 class="hero-title">
+        Verktøy og teknologi<br>
+        <span class="accent">for jernbane</span>
+      </h1>
+      <p class="hero-sub">Utvikling, produksjon og salg av spesialisert verktøy, måleutstyr og teknologiske løsninger for jernbane- og infrastrukturbransjen.</p>
+      <div class="hero-cta">
+        <a href="#kontakt" class="btn primary">Ta Kontakt</a>
+        <a href="#tjenester" class="btn outline">Våre Tjenester</a>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num">02</span>
-        <span class="stat-label">Produksjon</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num">03</span>
-        <span class="stat-label">Leveranse</span>
-      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
     </div>
   </header>
 
-  <!-- Marquee -->
-  <div class="marquee-wrap">
-    <div class="marquee">
-      <span>VERKTØY ◆ MÅLEUTSTYR ◆ TEKNOLOGI ◆ JERNBANE ◆ INFRASTRUKTUR ◆ INDUSTRIDESIGN ◆ PROTOTYPING ◆ RAIL ◆ TRACK ◆ MEASUREMENT ◆ PRECISION ◆ </span>
-      <span>VERKTØY ◆ MÅLEUTSTYR ◆ TEKNOLOGI ◆ JERNBANE ◆ INFRASTRUKTUR ◆ INDUSTRIDESIGN ◆ PROTOTYPING ◆ RAIL ◆ TRACK ◆ MEASUREMENT ◆ PRECISION ◆ </span>
-    </div>
-  </div>
-
   <!-- Services -->
   <section id="tjenester" class="section services">
-    <div class="section-header">
-      <span class="section-num">01</span>
-      <h2 class="section-title">Tjenester</h2>
-    </div>
-    <div class="services-grid">
-      <article class="service-card" data-reveal>
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M6 38h36M10 38V18l14-10 14 10v20M18 38v-12h12v12"/>
-          </svg>
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">01</span>
+        <span class="label-line"></span>
+        <span class="label-text">Tjenester</span>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M5 35h30M8 35V18L20 8l12 10v17M15 35V24h10v11"/>
+            </svg>
+          </div>
+          <h3>Industridesign</h3>
+          <p>Skreddersydd design av verktøy og utstyr med fokus på funksjonalitet, ergonomi og produksjonsvennlighet for krevende jernbanemiljøer.</p>
+          <div class="card-tag">74.110 NACE</div>
         </div>
-        <h3>Industridesign</h3>
-        <p>Skreddersydd design av verktøy og utstyr med fokus på funksjonalitet, ergonomi og produksjonsvennlighet for krevende jernbanemiljøer.</p>
-        <span class="service-tag">74.110 NACE</span>
-      </article>
-      <article class="service-card featured" data-reveal>
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-            <circle cx="24" cy="24" r="18"/><circle cx="24" cy="24" r="6"/><line x1="24" y1="6" x2="24" y2="12"/><line x1="24" y1="36" x2="24" y2="42"/><line x1="6" y1="24" x2="12" y2="24"/><line x1="36" y1="24" x2="42" y2="24"/>
-          </svg>
+        <div class="service-card highlight" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+              <circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="5"/><line x1="20" y1="5" x2="20" y2="10"/><line x1="20" y1="30" x2="20" y2="35"/><line x1="5" y1="20" x2="10" y2="20"/><line x1="30" y1="20" x2="35" y2="20"/>
+            </svg>
+          </div>
+          <h3>Måleutstyr</h3>
+          <p>Høypresist måleutstyr for sporkontroll, geometrimåling og tilstandsovervåking — utviklet for nøyaktighet i felt under alle værforhold.</p>
+          <div class="card-tag">Presisjon</div>
         </div>
-        <h3>Måleutstyr</h3>
-        <p>Høyprosent måleutstyr for sporkontroll, geometrimåling og tilstandsovervåking — utviklet for presisjon i felt under alle værforhold.</p>
-        <span class="service-tag">Presisjon</span>
-      </article>
-      <article class="service-card" data-reveal>
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-            <rect x="6" y="6" width="36" height="36" rx="4"/><line x1="6" y1="16" x2="42" y2="16"/><line x1="16" y1="6" x2="16" y2="42"/><circle cx="29" cy="29" r="7"/>
-          </svg>
+        <div class="service-card" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+              <rect x="5" y="5" width="30" height="30" rx="3"/><line x1="5" y1="13" x2="35" y2="13"/><line x1="13" y1="5" x2="13" y2="35"/><circle cx="24" cy="24" r="6"/>
+            </svg>
+          </div>
+          <h3>Verktøyutvikling</h3>
+          <p>Fra konsept til ferdig produkt — vi utvikler spesialverktøy for montasje, vedlikehold og inspeksjon av jernbaneinfrastruktur.</p>
+          <div class="card-tag">Prototype → Produksjon</div>
         </div>
-        <h3>Verktøyutvikling</h3>
-        <p>Fra konsept til ferdig produkt — vi utvikler spesialverktøy for montasje, vedlikehold og inspeksjon av jernbaneinfrastruktur.</p>
-        <span class="service-tag">Prototype → Produksjon</span>
-      </article>
-      <article class="service-card" data-reveal>
-        <div class="service-icon">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M4 40l8-8 6 6 10-14 6 6 10-20"/><rect x="36" y="8" width="8" height="8" rx="1"/>
-          </svg>
+        <div class="service-card" data-reveal>
+          <div class="card-icon">
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2">
+              <path d="M3 35l7-7 5 5 9-12 5 5 8-17"/><rect x="31" y="6" width="7" height="7" rx="1"/>
+            </svg>
+          </div>
+          <h3>Teknologiløsninger</h3>
+          <p>Integrerte teknologiske løsninger som kombinerer maskinvare og programvare for smartere drift og vedlikehold av jernbanenett.</p>
+          <div class="card-tag">IoT & Data</div>
         </div>
-        <h3>Teknologiløsninger</h3>
-        <p>Integrerte teknologiske løsninger som kombinerer maskinvare og programvare for smartere drift og vedlikehold av jernbanenett.</p>
-        <span class="service-tag">IoT & Data</span>
-      </article>
+      </div>
     </div>
   </section>
 
   <!-- About -->
   <section id="om" class="section about">
-    <div class="section-header">
-      <span class="section-num">02</span>
-      <h2 class="section-title">Om Oss</h2>
-    </div>
-    <div class="about-content" data-reveal>
-      <div class="about-text">
-        <p class="lead">Railtech AS er et Oslo-basert industridesign-selskap som leverer spesialiserte løsninger for jernbane- og infrastrukturbransjen.</p>
-        <p>Vi kombinerer dyp bransjekunnskap med moderne designtanke for å skape verktøy og utstyr som gjør en reell forskjell i daglig arbeid — frasporlegging til vedlikehold.</p>
-        <div class="about-details">
-          <div class="detail">
-            <span class="detail-key">Stiftet</span>
-            <span class="detail-val">September 2025</span>
-          </div>
-          <div class="detail">
-            <span class="detail-key">Hovedkvarter</span>
-            <span class="detail-val">Tønsberggata 4, Oslo</span>
-          </div>
-          <div class="detail">
-            <span class="detail-key">Selskapsform</span>
-            <span class="detail-val">Aksjeselskap (AS)</span>
-          </div>
-          <div class="detail">
-            <span class="detail-key">NACE</span>
-            <span class="detail-val">74.110 Industridesign</span>
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">02</span>
+        <span class="label-line"></span>
+        <span class="label-text">Om Oss</span>
+      </div>
+      <div class="about-grid" data-reveal>
+        <div class="about-text">
+          <p class="about-lead">Vi leverer spesialiserte løsninger for jernbane- og infrastrukturbransjen — fra første skisse til ferdig produkt.</p>
+          <p>Railtech AS kombinerer dyp bransjekunnskap med moderne designtanke for å skape verktøy og utstyr som gjør en reell forskjell i daglig arbeid — fra sporlegging til vedlikehold.</p>
+          <div class="about-details">
+            <div class="detail-row">
+              <span class="detail-key">Stiftet</span>
+              <span class="detail-val">September 2025</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Hovedkvarter</span>
+              <span class="detail-val">Tønsberggata 4, Oslo</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Selskapsform</span>
+              <span class="detail-val">Aksjeselskap (AS)</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">NACE</span>
+              <span class="detail-val">74.110 Industridesign</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Organisasjonsnr.</span>
+              <span class="detail-val">936 174 965</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="about-visual">
-        <div class="blueprint">
-          <div class="bp-grid">
-            <div class="bp-dot" style="grid-area: 3/3"></div>
-            <div class="bp-dot" style="grid-area: 3/7"></div>
-            <div class="bp-dot" style="grid-area: 5/5"></div>
-            <div class="bp-dot" style="grid-area: 7/3"></div>
-            <div class="bp-dot" style="grid-area: 7/7"></div>
-            <svg class="bp-lines" viewBox="0 0 100 100">
-              <line x1="30" y1="30" x2="50" y2="50" stroke="var(--accent)" stroke-width="0.3"/>
-              <line x1="70" y1="30" x2="50" y2="50" stroke="var(--accent)" stroke-width="0.3"/>
-              <line x1="30" y1="70" x2="50" y2="50" stroke="var(--accent)" stroke-width="0.3"/>
-              <line x1="70" y1="70" x2="50" y2="50" stroke="var(--accent)" stroke-width="0.3"/>
-              <circle cx="50" cy="50" r="20" stroke="var(--muted)" stroke-width="0.2" fill="none"/>
-              <circle cx="50" cy="50" r="8" stroke="var(--accent)" stroke-width="0.4" fill="none"/>
+        <div class="about-visual">
+          <div class="wire-frame">
+            <!-- Decorative catenary wire diagram -->
+            <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Support structure left -->
+              <line x1="80" y1="0" x2="80" y2="280" stroke="#E8A020" stroke-width="2" opacity="0.3"/>
+              <line x1="80" y1="80" x2="80" y2="280" stroke="#E8A020" stroke-width="1.5" opacity="0.15"/>
+              <!-- Support structure right -->
+              <line x1="320" y1="0" x2="320" y2="280" stroke="#E8A020" stroke-width="2" opacity="0.3"/>
+              <line x1="320" y1="80" x2="320" y2="280" stroke="#E8A020" stroke-width="1.5" opacity="0.15"/>
+              <!-- Cross arm -->
+              <line x1="60" y1="80" x2="100" y2="80" stroke="#E8A020" stroke-width="2" opacity="0.4"/>
+              <line x1="300" y1="80" x2="340" y2="80" stroke="#E8A020" stroke-width="2" opacity="0.4"/>
+              <!-- Catenary wire -->
+              <path d="M0 120 Q100 140 200 120 Q300 100 400 120" stroke="#E8A020" stroke-width="1.5" opacity="0.5"/>
+              <path d="M0 140 Q100 160 200 140 Q300 120 400 140" stroke="#E8A020" stroke-width="1" opacity="0.3"/>
+              <!-- Contact wire -->
+              <line x1="0" y1="200" x2="400" y2="200" stroke="#E8A020" stroke-width="2" opacity="0.6"/>
+              <!-- Droppers -->
+              <line x1="50" y1="125" x2="50" y2="200" stroke="#E8A020" stroke-width="0.8" opacity="0.2" stroke-dasharray="3 3"/>
+              <line x1="120" y1="130" x2="120" y2="200" stroke="#E8A020" stroke-width="0.8" opacity="0.2" stroke-dasharray="3 3"/>
+              <line x1="200" y1="120" x2="200" y2="200" stroke="#E8A020" stroke-width="0.8" opacity="0.2" stroke-dasharray="3 3"/>
+              <line x1="280" y1="125" x2="280" y2="200" stroke="#E8A020" stroke-width="0.8" opacity="0.2" stroke-dasharray="3 3"/>
+              <line x1="350" y1="130" x2="350" y2="200" stroke="#E8A020" stroke-width="0.8" opacity="0.2" stroke-dasharray="3 3"/>
+              <!-- Insulators -->
+              <ellipse cx="80" cy="85" rx="6" ry="4" stroke="#E8A020" stroke-width="1" opacity="0.5"/>
+              <ellipse cx="320" cy="85" rx="6" ry="4" stroke="#E8A020" stroke-width="1" opacity="0.5"/>
+              <!-- Rail at bottom -->
+              <line x1="0" y1="275" x2="400" y2="275" stroke="#1a1a2e" stroke-width="3" opacity="0.3"/>
+              <line x1="0" y1="285" x2="400" y2="285" stroke="#1a1a2e" stroke-width="3" opacity="0.3"/>
+              <!-- Sleepers -->
+              <rect x="20" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="60" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="100" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="140" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="180" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="220" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="260" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="300" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="340" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <rect x="380" y="272" width="4" height="16" fill="#1a1a2e" opacity="0.15" rx="1"/>
+              <!-- Annotations -->
+              <text x="205" y="115" fill="#E8A020" font-size="7" font-family="Inter" opacity="0.5" text-anchor="middle">KONTAKTLEDNING</text>
+              <text x="205" y="195" fill="#E8A020" font-size="7" font-family="Inter" opacity="0.4" text-anchor="middle">KONTAKTTRÅD</text>
             </svg>
+            <div class="wire-label">KONSTRUKSJON ◆ ENGINEERING ◆ PRESISJON</div>
           </div>
-          <span class="bp-label">DESIGN ◆ ENGINEERING ◆ PRECISION</span>
         </div>
       </div>
     </div>
@@ -177,81 +194,90 @@
 
   <!-- Technology -->
   <section id="teknologi" class="section tech">
-    <div class="section-header">
-      <span class="section-num">03</span>
-      <h2 class="section-title">Teknologi</h2>
-    </div>
-    <div class="tech-grid" data-reveal>
-      <div class="tech-item">
-        <span class="tech-num">→</span>
-        <h3>CAD & Simulering</h3>
-        <p>Full 3D-modellering med FEM-analyse for mekanisk styrke og materialoptimering.</p>
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">03</span>
+        <span class="label-line"></span>
+        <span class="label-text">Teknologi</span>
       </div>
-      <div class="tech-item">
-        <span class="tech-num">→</span>
-        <h3>Prototyping</h3>
-        <p>Rask prototyping via 3D-print og CNC for funksjonstesting før serieproduksjon.</p>
-      </div>
-      <div class="tech-item">
-        <span class="tech-num">→</span>
-        <h3>Materialvalg</h3>
-        <p>Spesialstål, kompositter og overflatebehandling tilpasset ekstrem belastning.</p>
-      </div>
-      <div class="tech-item">
-        <span class="tech-num">→</span>
-        <h3>Sertifisering</h3>
-        <p>Design for overholdelse med jernbanestandarder (EN, NS-EN, Bane NOR).</p>
+      <div class="tech-list" data-reveal>
+        <div class="tech-row">
+          <div class="tech-num">01</div>
+          <h3>CAD & Simulering</h3>
+          <p>Full 3D-modellering med FEM-analyse for mekanisk styrke og materialoptimering.</p>
+        </div>
+        <div class="tech-row">
+          <div class="tech-num">02</div>
+          <h3>Rask Prototyping</h3>
+          <p>3D-print og CNC for funksjonstesting før serieproduksjon.</p>
+        </div>
+        <div class="tech-row">
+          <div class="tech-num">03</div>
+          <h3>Materialvalg</h3>
+          <p>Spesialstål, kompositter og overflatebehandling tilpasset ekstrem belastning.</p>
+        </div>
+        <div class="tech-row">
+          <div class="tech-num">04</div>
+          <h3>Sertifisering</h3>
+          <p>Design for overholdelse med jernbanestandarder — EN, NS-EN, Bane NOR.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
   <section id="kontakt" class="section contact">
-    <div class="section-header">
-      <span class="section-num">04</span>
-      <h2 class="section-title">Kontakt</h2>
-    </div>
-    <div class="contact-content" data-reveal>
-      <div class="contact-info">
-        <div class="contact-block">
-          <span class="contact-label">Adresse</span>
-          <span class="contact-value">Tønsberggata 4<br>0464 Oslo</span>
-        </div>
-        <div class="contact-block">
-          <span class="contact-label">Telefon</span>
-          <a href="tel:+4793084961" class="contact-value link">930 84 961</a>
-        </div>
-        <div class="contact-block">
-          <span class="contact-label">E-post</span>
-          <a href="mailto:post@railtech.no" class="contact-value link">post@railtech.no</a>
-        </div>
+    <div class="container">
+      <div class="section-label">
+        <span class="label-num">04</span>
+        <span class="label-line"></span>
+        <span class="label-text">Kontakt</span>
       </div>
-      <div class="contact-form-wrap">
-        <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-success').classList.add('show');">
-          <div class="form-row">
-            <input type="text" placeholder="Navn" required />
-            <input type="email" placeholder="E-post" required />
+      <div class="contact-grid" data-reveal>
+        <div class="contact-info">
+          <div class="info-block">
+            <span class="info-label">Adresse</span>
+            <span class="info-value">Tønsberggata 4, 0464 Oslo</span>
           </div>
-          <input type="text" placeholder="Emne" />
-          <textarea placeholder="Melding" rows="4" required></textarea>
-          <button type="submit" class="btn primary full">Send Melding</button>
-          <div class="form-success">Takk for din henvendelse — vi svarer innen 24 timer.</div>
-        </form>
+          <div class="info-block">
+            <span class="info-label">Telefon</span>
+            <a href="tel:+4793084961" class="info-value accent">930 84 961</a>
+          </div>
+          <div class="info-block">
+            <span class="info-label">E-post</span>
+            <a href="mailto:post@railtech.no" class="info-value accent">post@railtech.no</a>
+          </div>
+          <div class="info-block">
+            <span class="info-label">Organisasjonsnr.</span>
+            <span class="info-value">936 174 965</span>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" onsubmit="event.preventDefault(); document.querySelector('.form-success').classList.add('show');">
+            <div class="form-row">
+              <input type="text" placeholder="Navn" required />
+              <input type="email" placeholder="E-post" required />
+            </div>
+            <input type="text" placeholder="Emne" />
+            <textarea placeholder="Melding" rows="4" required></textarea>
+            <button type="submit" class="btn primary full">Send Melding</button>
+            <div class="form-success">Takk for din henvendelse — vi svarer innen 24 timer.</div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-rail">
-      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-    </div>
-    <div class="footer-content">
-      <div class="footer-brand">
-        <span class="logo-mark">RT</span>
-        <span>RAILTECH AS</span>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-rail">RAILTECH</span><span class="logo-as"> AS</span>
+        </div>
+        <div class="footer-tagline">Innovasjon · Presisjon · Fremdrift</div>
+        <div class="footer-copy">© 2026 Railtech AS — Org.nr 936 174 965</div>
       </div>
-      <span class="footer-copy">© 2026 Railtech AS — Org.nr 936 174 965</span>
     </div>
   </footer>
 
